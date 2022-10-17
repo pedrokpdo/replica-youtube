@@ -4,6 +4,9 @@ import { CardsListRowComponent } from "../../components/CardsListRowComponent";
 import { ContainerComponent } from "../../components/funcionais/ContainerComponent";
 import { Space } from "../../components/funcionais/SpaceComponent";
 import { HeaderComponent } from "../../components/HeaderComponent";
+import { VideoComponent } from "../../components/VideoComponent";
+//@ts-ignore
+import video from '../../assets/video.jpg'
 
 export const HomeScreen = () => {
     return (
@@ -14,6 +17,7 @@ export const HomeScreen = () => {
             <Space top={-3}>
                 <CardsListRowComponent />
             </Space>
+            <VideoComponent name={'cigana'} photo={video} time='1.15' title={'Video de como editar video'} views='4.500'/>
         </ContainerComponent>
     )
 }
