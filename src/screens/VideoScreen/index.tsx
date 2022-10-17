@@ -16,10 +16,12 @@ import video3 from '../../assets/video3.webp'
 //@ts-ignore
 import video4 from '../../assets/video4.jpg'
 import { Row } from "../../components/funcionais/RowComponent";
-import { View } from "react-native";
+import { TouchableOpacity, View } from "react-native";
 import { BigDivider } from "../../components/BigDividerComponent";
+import { useNavigation } from "@react-navigation/native";
 
 export const VideoScreen = () => {
+    const navigation = useNavigation<any>()
     return (
         <>
             <FocusVideoComponent description={'1.194 vizualizações - há 1 mês #patrulhacaninaportugues'} videoName='Patrulha Canina / OsSuperfilhotes e os supergêmeos se unem! / Nick Jr.' />
@@ -29,7 +31,9 @@ export const VideoScreen = () => {
                 </Space>
                 <Divider top={1} bottom={1} />
                 <Space top={1}>
-                    <ChanelVideoComponent name={'Nick Jr em portugues'} inscribes='3,45 mi de inscritos' />
+                    <TouchableOpacity onPress={() => {navigation.navigate('ChanelScreen')}}>
+                        <ChanelVideoComponent name={'Nick Jr em portugues'} inscribes='3,45 mi de inscritos' />
+                    </TouchableOpacity>
                 </Space>
                 <BigDivider top={2} />
                 <View style={{ marginTop: 0 }}>
