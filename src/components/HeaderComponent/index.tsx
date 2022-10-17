@@ -18,9 +18,11 @@ export const HeaderComponent = () => {
                 <Image source={logo} style={{ width: 110, height: 100, resizeMode: 'center' }} />
                 <Row style={{ alignItems: 'center', justifyContent: 'space-around', width: 160 }}>
                     <Feather name='cast' color='black' size={24} />
-                    <Ionicons name='notifications-outline' color='black' size={24} />
+                    <TouchableOpacity onPress={() => {navigation.navigate('NotificationListScreen')}}>
+                        <Ionicons name='notifications-outline' color='black' size={24} />
+                    </TouchableOpacity>
                     <EvilIcons name='search' color='black' size={24} />
-                    <TouchableOpacity onPress={() => {navigation.navigate('ProfileScreen')}}>
+                    <TouchableOpacity onPress={() => { navigation.navigate('ProfileScreen') }}>
                         <AvatarComponent />
                     </TouchableOpacity>
                 </Row>
