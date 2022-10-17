@@ -15,8 +15,8 @@ export const VideoComponent = ({ photo, title, views, time, name }) => {
             <Space top={2}>
                 <Row>
                     <AvatarComponent />
-                    <View>
-                    <Title style={{ fontSize: 18 }}>{title}</Title>
+                    <View style={{ marginLeft: 16 }}>
+                        <Title style={{ fontSize: 18 }}>{title}</Title>
                         <Text style={{ fontSize: 12 }}>{name} - {views} mil visualizações - há 1 hora</Text>
                     </View>
                 </Row>
