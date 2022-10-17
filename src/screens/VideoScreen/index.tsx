@@ -9,6 +9,12 @@ import { ContainerComponent } from "../../components/funcionais/ContainerCompone
 import { VideoComponent } from "../../components/VideoComponent";
 //@ts-ignore
 import video from '../../assets/video.jpg'
+//@ts-ignore
+import video2 from '../../assets/video2.jpg'
+//@ts-ignore
+import video3 from '../../assets/video3.webp'
+//@ts-ignore
+import video4 from '../../assets/video4.jpg'
 import { Row } from "../../components/funcionais/RowComponent";
 import { View } from "react-native";
 import { BigDivider } from "../../components/BigDividerComponent";
@@ -25,17 +31,17 @@ export const VideoScreen = () => {
                 <Space top={1}>
                     <ChanelVideoComponent name={'Nick Jr em portugues'} inscribes='3,45 mi de inscritos' />
                 </Space>
-                <BigDivider top={2}/>
+                <BigDivider top={2} />
                 <View style={{ marginTop: 0 }}>
-                    <VideoComponent views={'2222'} name={'Nick Jr'} photo={video} time={'1.32'} title={'como fazer casquinha de sorvete'} />
+                    <VideoComponent views={'2222'} name={'Nick Jr'} photo={video2} time={'1.32'} title={'como fazer casquinha de sorvete'} />
                 </View>
-                <BigDivider top={2}/>
+                <BigDivider top={2} />
                 <View style={{ marginTop: 0 }}>
-                    <VideoComponent views={'2222'} name={'Nick Jr'} photo={video} time={'1.32'} title={'como fazer casquinha de sorvete'} />
+                    <VideoComponent views={'2222'} name={'Nick Jr'} photo={video3} time={'1.32'} title={'como fazer casquinha de sorvete'} />
                 </View>
-                <BigDivider top={2}/>
+                <BigDivider top={2} />
                 <View style={{ marginTop: 0 }}>
-                    <VideoComponent views={'2222'} name={'Nick Jr'} photo={video} time={'1.32'} title={'como fazer casquinha de sorvete'} />
+                    <VideoComponent views={'2222'} name={'Nick Jr'} photo={video4} time={'1.32'} title={'como fazer casquinha de sorvete'} />
                 </View>
             </ContainerComponent>
         </>
