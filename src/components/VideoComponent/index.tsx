@@ -9,7 +9,7 @@ import { Title } from "../funcionais/TitleComponent";
 export const VideoComponent = ({ photo, title, views, time, name }) => {
     return (
         <>
-            <ImageBackground source={photo} style={{ height: 280, marginTop: 16 }}>
+            <ImageBackground source={photo} style={{ height: 280 }}>
                 <Text style={{ position: 'absolute', bottom: 16, right: 16, backgroundColor: 'black', color: 'white' }}>{time}</Text>
             </ImageBackground>
             <Space top={2}>
