@@ -1,4 +1,4 @@
-import { Ionicons } from "@expo/vector-icons";
+import { AntDesign, Entypo, Feather, Ionicons, MaterialIcons } from "@expo/vector-icons";
 import React from "react";
 import { ImageBackground, View } from "react-native";
 //@ts-ignore
@@ -13,16 +13,16 @@ export const FocusVideoComponent = ({ videoName, description }) => {
         <>
             <ImageBackground style={{ height: 300 }} source={video}>
                 <Space>
-                    <Row style={{ justifyContent: 'space-between' }}>
+                    <Row top={1} style={{ justifyContent: 'space-between' }}>
                         <Ionicons name="caret-down" color={'white'} size={24} />
-                        <Row>
-                            <Text>1</Text>
-                            <Text>2</Text>
-                            <Text>3</Text>
-                            <Text>4</Text>
+                        <Row style={{ width: 160, justifyContent: 'space-around' }}>
+                            <Entypo name="switch" size={24} color={'white'} />
+                            <Feather name="cast" size={24} color={'white'} />
+                            <MaterialIcons name="closed-caption-off" size={24} color={'white'} />
+                            <AntDesign name="setting" size={24} color={'white'} />
                         </Row>
                     </Row>
-                    <Row top={12} style={{ alignItems: 'center', justifyContent: 'space-around', bottom: 0 }}>
+                    <Row top={11} style={{ alignItems: 'center', justifyContent: 'space-around', bottom: 0 }}>
                         <View style={{ backgroundColor: 'gray', padding: 8, borderRadius: 100, alignItems: 'center', justifyContent: 'center' }}>
                             <Ionicons name="play-back-sharp" color={'white'} size={32} />
 
