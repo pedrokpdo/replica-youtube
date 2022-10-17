@@ -12,6 +12,8 @@ import { AvatarComponent } from "../../components/AvatarComponent";
 import { Title } from "../../components/funcionais/TitleComponent";
 import { Text } from "../../components/funcionais/TextComponent";
 import { VideoComponent } from "../../components/VideoComponent";
+import { Divider } from "../../components/funcionais/Divider";
+import { VideoRowComponent } from "../../components/VideoRowComponent";
 
 const { width } = Dimensions.get('screen')
 
@@ -21,7 +23,7 @@ export const ChanelScreen = () => {
             <Space top={2}>
                 <MainHeaderComponent name={'Nick Jr.'} />
             </Space>
-            <Space top={2}>
+            <Space top={2} bottom={1}>
                 <TopTabComponent />
             </Space>
             <Image source={patrulha} style={{ width: width, height: 100 }} />
@@ -35,6 +37,13 @@ export const ChanelScreen = () => {
                 </View>
             </Space>
             <VideoComponent name={'Nick Jr.'} photo={video2} time={'5.1'} title={'Trailer patrulha canina'} views={'1.345'} />
+            <Divider top={1} bottom={1}/>
+            <Space>
+                <Title>Paw Patrol / Brasil</Title>
+            </Space>
+            <Space top={2}>
+                <VideoRowComponent/>
+            </Space>
         </ContainerComponent>
     )
 }
