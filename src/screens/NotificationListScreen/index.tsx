@@ -15,7 +15,7 @@ export const NotificationListScreen = () => {
     return (
         <ContainerComponent>
             <Space top={2}>
-                <MainHeaderComponent />
+                <MainHeaderComponent name={'Notificações'}/>
             </Space>
             <Space top={2}>
                 <Title>Hoje</Title>

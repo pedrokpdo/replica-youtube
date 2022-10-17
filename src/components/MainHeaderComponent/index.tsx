@@ -10,7 +10,7 @@ import { useNavigation } from "@react-navigation/native";
 import { Title } from "../funcionais/TitleComponent";
 
 
-export const MainHeaderComponent = () => {
+export const MainHeaderComponent = ({name}) => {
     const navigation = useNavigation<any>()
     return (
         <View>
@@ -19,7 +19,7 @@ export const MainHeaderComponent = () => {
                     <TouchableOpacity onPress={() => {navigation.goBack()}}>
                         <AntDesign name="left" size={24} color={'black'} />
                     </TouchableOpacity>
-                    <Title style={{ marginLeft: 16 }}>Notificações</Title>
+                    <Title style={{ marginLeft: 16 }}>{name}</Title>
                 </Row>
                 <Row style={{ alignItems: 'center', justifyContent: 'space-around', width: 160 }}>
                     <Feather name='cast' color='black' size={24} />
