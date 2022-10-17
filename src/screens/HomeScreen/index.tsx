@@ -7,7 +7,7 @@ import { HeaderComponent } from "../../components/HeaderComponent";
 export const HomeScreen = () => {
     return (
         <ContainerComponent>
-            <Space>
+            <Space top={-3}>
                 <HeaderComponent/>
             </Space>
         </ContainerComponent>
