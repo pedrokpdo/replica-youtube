@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { Text, TouchableOpacity, View } from "react-native";
 import { CardsListRowComponent } from "../../components/CardsListRowComponent";
 import { ContainerComponent } from "../../components/funcionais/ContainerComponent";
 import { Space } from "../../components/funcionais/SpaceComponent";
@@ -8,8 +8,10 @@ import { VideoComponent } from "../../components/VideoComponent";
 //@ts-ignore
 import video from '../../assets/video.jpg'
 import { BigDivider } from "../../components/BigDividerComponent";
+import { useNavigation } from "@react-navigation/native";
 
 export const HomeScreen = () => {
+    const navigation = useNavigation<any>()
     return (
         <ContainerComponent>
             <Space top={-3}>
@@ -18,7 +20,9 @@ export const HomeScreen = () => {
             <Space top={-3} bottom={2}>
                 <CardsListRowComponent />
             </Space>
-            <VideoComponent name={'cigana'} photo={video} time='1.15' title={'Video de como editar video'} views='4.500' />
+            <TouchableOpacity onPress={() => { navigation.navigate('VideoScreen') }}>
+                <VideoComponent name={'cigana'} photo={video} time='1.15' title={'Video de como editar video'} views='4.500' />
+            </TouchableOpacity>
             <BigDivider top={2} />
             <VideoComponent name={'cigana'} photo={video} time='1.15' title={'Video de como editar video'} views='4.500' />
             <BigDivider top={2} />
