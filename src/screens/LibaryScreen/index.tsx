@@ -1,6 +1,7 @@
 import { AntDesign, Entypo, Feather, FontAwesome5, Ionicons, MaterialIcons } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
 import React from "react";
-import { ScrollView, View } from "react-native";
+import { ScrollView, TouchableOpacity, View } from "react-native";
 import { ContainerComponent } from "../../components/funcionais/ContainerComponent";
 import { Divider } from "../../components/funcionais/Divider";
 import { Row } from "../../components/funcionais/RowComponent";
@@ -13,6 +14,7 @@ import { LitleVideoComponent } from "../../components/LitleVideoComponent";
 
 
 export const LibaryScreen = () => {
+    const navigation = useNavigation<any>()
     return (
         <ContainerComponent>
             <Space top={-2.5}>
@@ -49,10 +51,14 @@ export const LibaryScreen = () => {
             <Divider />
             <Space>
                 <Row top={1}>
-                    <LinkRowComponent Icon={Entypo} iconName='folder-video' text={'Seus Videos'} />
+                    <TouchableOpacity onPress={() => {navigation.navigate('MyVideosScreen')}}>
+                        <LinkRowComponent Icon={Entypo} iconName='folder-video' text={'Seus Videos'} />
+                    </TouchableOpacity>
                 </Row>
                 <Row top={2}>
-                    <LinkRowComponent Icon={Feather} iconName='film' text={'Seus Filmes'} />
+                    <TouchableOpacity onPress={() => {navigation.navigate('MyFilmsScreen')}}>
+                        <LinkRowComponent Icon={Feather} iconName='film' text={'Seus Filmes'} />
+                    </TouchableOpacity>
                 </Row>
             </Space>
             <Divider top={3} bottom={3} />
