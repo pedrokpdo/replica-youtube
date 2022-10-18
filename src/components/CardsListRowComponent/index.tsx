@@ -10,6 +10,7 @@ export const CardsListRowComponent = ({ focus, setFocus }) => {
             <View style={{ backgroundColor: focus === 'explore' ? 'gray' : '#dbdbdb', height: 30, paddingHorizontal: 8, marginRight: 16, borderRadius: 16, alignItems: 'center', justifyContent: 'center' }}>
                 <MaterialIcons name='explore' size={24} color={focus === 'explore' ? 'white' : 'black'} />
             </View>
+            <View style={{ height: 30, width: 1, backgroundColor: '#dddd', marginRight: 16 }}/>
             <View style={{ backgroundColor: focus === 'all' ? 'gray' : '#dbdbdb', height: 30, paddingHorizontal: 16, marginRight: 16, borderRadius: 16, alignItems: 'center', justifyContent: 'center' }}>
                 <Text style={{ color: focus === 'all' ? 'white' : 'black' }}>Tudo</Text>
             </View>

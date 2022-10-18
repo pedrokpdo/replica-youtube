@@ -15,7 +15,7 @@ export const HeaderComponent = () => {
     return (
         <View>
             <Row style={{ alignItems: 'center', justifyContent: 'space-between' }}>
-                <Image source={logo} style={{ width: 110, height: 100, resizeMode: 'center' }} />
+                <Image source={logo} style={{ width: 90, height: 100, resizeMode: 'center' }} />
                 <Row style={{ alignItems: 'center', justifyContent: 'space-around', width: 160 }}>
                     <Feather name='cast' color='black' size={24} />
                     <TouchableOpacity onPress={() => {navigation.navigate('NotificationListScreen')}}>
