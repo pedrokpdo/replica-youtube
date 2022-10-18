@@ -6,7 +6,7 @@ import { Title } from "../funcionais/TitleComponent";
 export const NotificationButtonComponent = () => {
     return (
         <TouchableOpacity style={{ flexDirection: 'row', borderColor: '#59a3e9', borderWidth: 1, alignItems: 'center', justifyContent: 'center', padding: 8 }}>
-            <Ionicons name="notifications-outline" color={'blue'} size={24} />
+            <Ionicons name="notifications-outline" color={'#59a3e9'} size={24} />
             <Title style={{ color: '#59a3e9', marginLeft: 16 }}>RECEBER NOTIFICAÇÕES</Title>
         </TouchableOpacity>
     )
