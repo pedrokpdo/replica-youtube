@@ -8,6 +8,11 @@ export const ShortsScreen = () => {
     return (
         <ContainerComponent>
             <ShortComponent />
+            <ShortComponent />
+            <ShortComponent />
+            <ShortComponent />
+            <ShortComponent />
+            <ShortComponent />
         </ContainerComponent>
     )
 }
