@@ -9,8 +9,8 @@ const { width } = Dimensions.get('screen')
 
 export const LitleVideoComponent = () => {
     return (
-        <View style={{  }}>
-            <ImageBackground source={video} style={{ width: width / 2 - 32, height: 100 }}>
+        <View style={{ width: width / 2 - 40 }}>
+            <ImageBackground source={video} style={{ width: width / 2 - 50, height: 100 }}>
                 <Row style={{ position: 'absolute', bottom: 8, right: 8 }}>
                     <Text style={{ color: 'white', backgroundColor: 'black' }}>1.42</Text>
                 </Row>
