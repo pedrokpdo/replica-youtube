@@ -1,8 +1,7 @@
 import { AntDesign } from "@expo/vector-icons";
 import React from "react";
 import { Dimensions, ImageBackground, View } from "react-native";
-//@ts-ignore
-import short from '../../assets/short.webp'
+
 import { AvatarComponent } from "../AvatarComponent";
 import { FullCard } from "../funcionais/FullCard";
 import { Row } from "../funcionais/RowComponent";
@@ -13,9 +12,9 @@ const { width, height } = Dimensions.get('window')
 
 
 
-export const ShortComponent = () => {
+export const ShortComponent = ({ title, name, photo }) => {
     return (
-        <ImageBackground style={{ width: width, height: height - 64 }} source={short}>
+        <ImageBackground style={{ width: width, height: height - 64 }} source={photo}>
             <Space>
                 <Row style={{ alignItems: 'center', justifyContent: 'space-between' }}>
                     <Title top={1} style={{ color: 'white', fontSize: 30 }}>Shorts</Title>
@@ -55,10 +54,10 @@ export const ShortComponent = () => {
                         </View>
                     </View>
                 </View>
-                <Title style={{ color: 'white' }}>Share Love - Rhiana</Title>
+                <Title style={{ color: 'white' }}>{title}</Title>
                 <Row top={1} style={{ alignItems: 'center' }}>
                     <AvatarComponent big />
-                    <Title style={{ color: 'white', marginLeft: 16 }}>Music Time</Title>
+                    <Title style={{ color: 'white', marginLeft: 16 }}>{name}</Title>
                     <FullCard style={{ backgroundColor: 'red', padding: 4, marginLeft: 16 }}>
                         <Title style={{ color: 'white' }}>INSCREVER-SE</Title>
                     </FullCard>
