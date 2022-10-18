@@ -28,7 +28,7 @@ export const MyVideosScreen = () => {
             <Space>
                 {focus === 'search' ? (
                     <View>
-                        <Image source={share} style={{ width: 300, resizeMode: 'center', height: 300 }}/>
+                        <Image source={share} style={{ width: 300, resizeMode: 'center', height: 300 }} />
                     </View>
                 ) : (
                     <View style={{ alignItems: 'center', marginTop: 80 }}>
